@@ -1,0 +1,44 @@
+#upper {
+    padding: 5em 4em 5em 4em;
+    background-color: cornsilk;
+    text-align: center;
+}
+#lower{
+    background-color:coral;
+    padding: 50px;
+    text-align: center;
+    height: 200px;
+    overflow:auto;
+    
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+　
+}
+h1 {
+    color: brown;
+}
+#lower .pict{
+    float: left;
+    width: 50%;   
+}
+
+table {
+    border-width:3px;
+    border-style:dashed;
+    border-color:#FFAC55;
+    padding:5px;
+    
+}
+td {
+    padding:0 ;
+}
+.bank{
+    padding: 10px;
+    display: inline-block;
+}
+pre{
+    display: block;
+    padding: 10px;
+}

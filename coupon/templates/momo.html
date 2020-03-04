@@ -1,0 +1,60 @@
+  <head >
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/index.css">
+</head>
+<body id = "bd">
+    <section id = "upper">
+        <div class = "coupon" style="margin: 0 auto"></div>
+            <h1 style = "font-size: 300%">Coupon</h1>
+            {% for table in tables %}
+                    {{ table|safe }}
+            {% endfor %}
+        </div>
+    </section>
+    <section id = "lower">
+        
+        <div class = 'bank'>
+            <h1 style = "font-size: 300%">Bank Discount</h1>
+            {% for url in contentlist %}
+                <img src = {{ url[0] }}>
+                <pre> {{url[1]}}</pre>
+            {% endfor %}
+            
+        </div>
+<!--
+        <div class = "bank">
+            <img src = "https://img3.momoshop.com.tw/ecm/img/online/10/007/17/973/images/banklogo_013.jpg?t=1547733602786">
+            <pre align="center">{{contentlist[0]}}</pre>
+        </div>
+        <div class=" bank">
+             
+            <img src = "https://img1.momoshop.com.tw/ecm/img/online/10/007/17/973/images/banklogo_808.jpg?t=1547733602786">
+            <pre>{{contentlist[1]}}
+            </pre>    
+        </div>
+        <div class=" bank">
+            
+            <img src = "https://img1.momoshop.com.tw/ecm/img/online/10/007/17/973/images/banklogo_021.jpg?t=1547733602786">
+            <pre>{{contentlist[2]}}
+            </pre>    
+        </div>
+        <div class=" bank">
+            
+            <img src = "https://img3.momoshop.com.tw/ecm/img/online/10/007/17/973/images/banklogo_012.jpg?t=1547733602786">
+            <pre>{{contentlist[3]}}
+            </pre>    
+        </div>
+        <div class=" bank">
+            
+            <img src = "https://img4.momoshop.com.tw/ecm/img/online/10/007/17/973/images/banklogo_812.jpg?t=1547733602786">
+            <pre>{{contentlist[4]}}
+            </pre>    
+        </div>
+        <div class=" bank">
+            
+            <img src = "https://img4.momoshop.com.tw/ecm/img/online/10/007/17/973/images/banklogo_803.jpg?t=1547733602786">
+            <pre>{{contentlist[5]}}</pre>    
+        </div>
+-->
+    </section>
+</body>

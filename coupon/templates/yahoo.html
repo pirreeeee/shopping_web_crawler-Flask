@@ -1,0 +1,27 @@
+<head >
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/index.css">
+</head>
+<body id = "bd">
+    <section id = "upper">
+        <div class= "coupon"></div>
+            <h1 style = "font-size: 300%">Coupon</h1>
+            {% for table in tables %}
+                    {{ table|safe }}
+            {% endfor %}
+        </div>
+    </section>
+    <section id = "lower">
+        
+        <div class = 'bank'>
+            <h1 style = "font-size: 300%">Bank Discount</h1>
+            {% for url in urlList %}
+                <img src = {{ url[0] }}>
+                <pre> {{url[1]}}</pre>
+            {% endfor %}
+            
+            
+        </div>
+
+    </section>
+</body>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    
+        <link rel="stylesheet" href="static/index.css">
+    </head>
+
+    <body>
+        <section id = "upper">
+            <h1 style="font-size:5vw">
+                Coupon EveryDay
+            </h1>
+        </section>
+        <section id = lower>
+            
+            <div class = "pict" id = imgleft>
+                <a href = "{{ url_for('html_table') }}">
+                    <img src = "static/yahoo.png"  height="200" width= 50%>
+                </a>
+            </div>
+            <div class = "pict" id = imgcenter>
+                <a href = "{{ url_for('html') }}">
+                    <img src = "static/momo1.png"    height="200" width= 50%>
+                </a>
+            </div>
+<!--
+            <div class = "pict" id = imgright>
+                <img src = "static/shopee.png"   height="200" width= 50%>
+            </div>
+-->
+            
+        </section>
+        
+    </body>
+    <script src = "script.js">
+    </script>
+</html>
